@@ -4,6 +4,8 @@ This is a small cli for controlling my IKEA tradfri lights.
 
 It's using [https://github.com/CliffS/ikea-tradfri](https://github.com/CliffS/ikea-tradfri).
 
+![](./tradfri-cli.gif)
+
 ## Get started
 
 * `securityCode` from the back of your tradfri Gateway
