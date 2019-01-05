@@ -1,0 +1,17 @@
+{
+  "name": "tradfri-cli",
+  "version": "1.0.0",
+  "description": "Tool for my tradfri devices",
+  "main": "index.js",
+  "scripts": {
+    "start": "DEBUG=tradfri-cli:* nodemon index.js",
+    "init": "DEBUG=tradfri-cli:* node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Bytekeks",
+  "license": "ISC",
+  "dependencies": {
+    "debug": "^4.1.1",
+    "ikea-tradfri": "^3.3.1"
+  }
+}
