@@ -19,25 +19,19 @@ const app = async () => {
   await myLamps.connect();
 
   if (program.brightness) {
-    // console.log('%j', program.brightness);
-    await myLamps.setBrightness('Schreibtisch', program.brightness);
-    await myLamps.setBrightness('Schrank', program.brightness);
+    await myLamps.setBrightness('MyCoolLampName', program.brightness);
   }
 
   if (program.temp && !program.switchoff) {
-    // console.log('%j', program.temp);
-    await myLamps.setColour('Schreibtisch', program.temp);
-    await myLamps.setColour('Schrank', program.temp);
+    await myLamps.setColour('MyCoolLampName', program.temp);
   }
 
   if (program.switchoff) {
-    await myLamps.switchOff('Schrank');
-    await myLamps.switchOff('Schreibtisch');
+    await myLamps.switchOff('MyCoolLampName');
   }
 
   // if (program.switchoon) {
-  //   await myLamps.switchOn('Schrank');
-  //   await myLamps.switchOn('Schreibtisch');
+  //   await myLamps.switchOn('MyCoolLampName');
   // }
 
   await myLamps.close();
